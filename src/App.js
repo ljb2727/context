@@ -1,10 +1,14 @@
 import React from "react";
-import "./App.css";
+import LeftPane from "./components/LeftPane";
+import RightPane from "./components/RightPane";
 
-class App extends React.Component {
-    render() {
-        return <div>te</div>;
-    }
-}
+const App = () => {
+    return (
+        <div className="panes">
+            <LeftPane />
+            <RightPane />
+        </div>
+    );
+};
 
 export default App;
